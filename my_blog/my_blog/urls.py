@@ -21,5 +21,6 @@ urlpatterns = [
   # url(r'^$','artical.views.home'),
   # url(r'^(?P<my_args>\d+)/$','artical.views.detail', name = 'detail'),
   # url(r'^test/$','artical.views.test'),
-    url(r'^$', 'artical.views.home'),
+    url(r'^$', 'artical.views.home', name = 'home'),
+    url(r'^(?P<id>\d+)/$', 'artical.views.detail', name = 'detail'),
 ]
