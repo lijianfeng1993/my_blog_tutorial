@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^archives/$', 'artical.views.archives', name = 'archives'),
     url(r'^aboutme/$', 'artical.views.about_me', name = 'about_me'),
     url(r'^(?P<tag>\w+)/$', 'artical.views.search_tag', name = 'search_tag'),
+    url(r'^feed/$', 'artical.views.RSSFeed', name = "RSS"), 
 ]
